@@ -1,24 +1,24 @@
 # aula de Cross-Platform Application Development
 
 
-# instalar (caso necessário) no terminal
-# Verifique se já tem instalado
+* instalar (caso necessário) no terminal
+* Verifique se já tem instalado
 node --version
 npm --version
 
-# Deve retornar v20.x ou superior
-# Verificar instalação
+* Deve retornar v20.x ou superior
+* Verificar instalação
 java -version
 javac -version
 
-# Configuração essencial:
-# Instalar Android Studio
-# SDK Platform (Android 13+)
-# Android SDK Build-Tools
-# Criar AVD (Pixel 5 ou similar)
+* Configuração essencial:
+Instalar Android Studio
+SDK Platform (Android 13+)
+Android SDK Build-Tools
+Criar AVD (Pixel 5 ou similar)
 
 xcode-select --install
-#clica em A
+* clica em A
 
 // settings.json
 {
