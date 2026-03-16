@@ -1,0 +1,27 @@
+import { useState } from 'react';
+
+const [valor, setValor] = useState(valorInicial);
+
+import {View, Text, Button} from 'react-native';
+import {useState, useEffect} from 'react';
+
+export default function CopoBotao() {
+  const [copos, setCopos] = useState(0);
+  useEffect(() => {
+    if (count === 8) setMsg('🥤 Meta de água atingida');
+  }, [count]);
+return (
+  <View>
+    <Text> {copos} copos de água</Text>
+    <Button title="🥤 Copos de água" onPress={() => setCopos(copos + 1)} />
+  </View>
+  );
+}
+const styles = StyleSheet.create({
+  container: { flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#0fff'},
+  msg:       { color: '#aaa', fontSize: 16, marginBottom: 12 },
+  counter:   { color: '#fff', fontSize: 72, fontWeight: 'bold'},
+  btn:       { marginTop: 24, backgroundColor: '#6c63ff', paddingHorizontal: 40, paddingVertical: 16, borderRadius: 50 },
+  btnText:   { color: '#fff', fontSize: 20, fontWeight: 'bold' },
+});
+
